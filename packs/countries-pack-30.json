@@ -1,0 +1,1448 @@
+{
+  "United States": {
+    "code": "USA",
+    "capital": "Washington, D.C.",
+    "cyberProfile": {
+      "nationalCERT": "CISA (US)",
+      "responsibleDisclosure": "Coordinated Vulnerability Disclosure via vendors or platforms; CISA advisories",
+      "infosecCompanies": [
+        "Mandiant",
+        "CrowdStrike",
+        "Palo Alto Networks"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Apple",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Back up and test restores",
+        "Patch critical vulns quickly"
+      ],
+      "notableBreaches": [
+        "Equifax (2017)",
+        "Colonial Pipeline (2021)",
+        "SolarWinds supply chain (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2017,
+          "title": "Equifax data breach",
+          "summary": "Personal data of ~147M exposed; Apache Struts exploited.",
+          "severity": "High",
+          "link": "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement"
+        },
+        {
+          "year": 2021,
+          "title": "Colonial Pipeline ransomware",
+          "summary": "Fuel pipeline operations disrupted.",
+          "severity": "High",
+          "link": "https://www.cisa.gov"
+        },
+        {
+          "year": 2020,
+          "title": "SolarWinds supply chain compromise",
+          "summary": "Malicious updates impacted many orgs; long dwell time.",
+          "severity": "High",
+          "link": "https://www.cisa.gov/news-events/alerts/aa20-352a"
+        }
+      ],
+      "sources": [
+        "https://www.cisa.gov",
+        "https://www.ftc.gov"
+      ]
+    }
+  },
+  "United Kingdom": {
+    "code": "GBR",
+    "capital": "London",
+    "cyberProfile": {
+      "nationalCERT": "NCSC (UK)",
+      "responsibleDisclosure": "NCSC reporting and vendor PSIRTs",
+      "infosecCompanies": [
+        "BAE Systems Applied Intelligence",
+        "Darktrace"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly",
+        "Back up and test restores"
+      ],
+      "notableBreaches": [
+        "WannaCry NHS impact (2017)",
+        "TalkTalk (2015)"
+      ],
+      "incidents": [
+        {
+          "year": 2017,
+          "title": "WannaCry ransomware - NHS",
+          "summary": "NHS services disrupted across England.",
+          "severity": "High",
+          "link": "https://www.nao.org.uk/reports/investigation-wannacry-cyber-attack-and-the-nhs/"
+        },
+        {
+          "year": 2015,
+          "title": "TalkTalk breach",
+          "summary": "SQL injection led to exposure of customer data.",
+          "severity": "High",
+          "link": "https://ico.org.uk/"
+        }
+      ],
+      "sources": [
+        "https://www.ncsc.gov.uk/",
+        "https://www.nao.org.uk/"
+      ]
+    }
+  },
+  "Germany": {
+    "code": "DEU",
+    "capital": "Berlin",
+    "cyberProfile": {
+      "nationalCERT": "BSI (CERT-Bund)",
+      "responsibleDisclosure": "German BSI guidance or vendor PSIRTs",
+      "infosecCompanies": [
+        "Secunet",
+        "G DATA"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "SAP",
+        "Siemens"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly",
+        "Network segmentation"
+      ],
+      "notableBreaches": [
+        "Bundestag hack (2015)",
+        "University/municipal ransomware waves (2020+)"
+      ],
+      "incidents": [
+        {
+          "year": 2015,
+          "title": "German Bundestag network breach",
+          "summary": "Parliament IT compromised; rebuild required.",
+          "severity": "High",
+          "link": "https://www.bsi.bund.de"
+        },
+        {
+          "year": 2020,
+          "title": "Ransomware waves in education/municipalities",
+          "summary": "Multiple German orgs impacted.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.bsi.bund.de"
+      ]
+    }
+  },
+  "France": {
+    "code": "FRA",
+    "capital": "Paris",
+    "cyberProfile": {
+      "nationalCERT": "ANSSI (CERT-FR)",
+      "responsibleDisclosure": "CERT-FR advisories / vendor PSIRTs",
+      "infosecCompanies": [
+        "Orange Cyberdefense",
+        "Thales"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly"
+      ],
+      "notableBreaches": [
+        "TV5Monde hack (2015)",
+        "Hospital ransomware incidents (2020+)"
+      ],
+      "incidents": [
+        {
+          "year": 2015,
+          "title": "TV5Monde compromise",
+          "summary": "Broadcast disrupted; attackers defaced channels.",
+          "severity": "High",
+          "link": "https://www.cert.ssi.gouv.fr/"
+        },
+        {
+          "year": 2020,
+          "title": "Hospital ransomware",
+          "summary": "French hospitals faced disruptions; CERT-FR issued alerts.",
+          "severity": "Medium",
+          "link": "https://www.cert.ssi.gouv.fr/"
+        }
+      ],
+      "sources": [
+        "https://www.cert.ssi.gouv.fr/"
+      ]
+    }
+  },
+  "Netherlands": {
+    "code": "NLD",
+    "capital": "Amsterdam",
+    "cyberProfile": {
+      "nationalCERT": "NCSC-NL / GOVCERT",
+      "responsibleDisclosure": "NCSC-NL guidance; strong RD culture",
+      "infosecCompanies": [
+        "Fox-IT",
+        "Secura"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Use responsible disclosure channels"
+      ],
+      "notableBreaches": [
+        "DigiNotar CA compromise (2011)"
+      ],
+      "incidents": [
+        {
+          "year": 2011,
+          "title": "DigiNotar certificate authority breach",
+          "summary": "Fraudulent certificates issued; CA collapsed.",
+          "severity": "High",
+          "link": "https://www.ncsc.nl/"
+        }
+      ],
+      "sources": [
+        "https://www.ncsc.nl/"
+      ]
+    }
+  },
+  "Belgium": {
+    "code": "BEL",
+    "capital": "Brussels",
+    "cyberProfile": {
+      "nationalCERT": "CERT.be (CCB)",
+      "responsibleDisclosure": "CCB guidance or vendor PSIRTs",
+      "infosecCompanies": [
+        "NVISO",
+        "BruCON community"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Security awareness training"
+      ],
+      "notableBreaches": [
+        "Belnet DDoS affected public sites (2021)"
+      ],
+      "incidents": [
+        {
+          "year": 2021,
+          "title": "Belnet DDoS",
+          "summary": "DDoS disrupted access to gov and educational sites.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cert.be/"
+      ]
+    }
+  },
+  "Switzerland": {
+    "code": "CHE",
+    "capital": "Bern",
+    "cyberProfile": {
+      "nationalCERT": "GovCERT.ch / NCSC",
+      "responsibleDisclosure": "GovCERT coordination; vendor PSIRTs",
+      "infosecCompanies": [
+        "ELCA Security",
+        "SCRT"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Zero trust principles"
+      ],
+      "notableBreaches": [
+        "RUAG espionage case (2016)"
+      ],
+      "incidents": [
+        {
+          "year": 2016,
+          "title": "RUAG cyber-espionage",
+          "summary": "Long-term compromise of defense contractor.",
+          "severity": "High",
+          "link": "https://www.govcert.admin.ch/"
+        }
+      ],
+      "sources": [
+        "https://www.govcert.admin.ch/"
+      ]
+    }
+  },
+  "Austria": {
+    "code": "AUT",
+    "capital": "Vienna",
+    "cyberProfile": {
+      "nationalCERT": "CERT.at",
+      "responsibleDisclosure": "CERT.at / vendor processes",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly"
+      ],
+      "notableBreaches": [
+        "Foreign Ministry cyberattack (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Foreign Ministry attack",
+          "summary": "Targeted attack with suspected state actor.",
+          "severity": "High",
+          "link": "https://www.cert.at/"
+        }
+      ],
+      "sources": [
+        "https://www.cert.at/"
+      ]
+    }
+  },
+  "Spain": {
+    "code": "ESP",
+    "capital": "Madrid",
+    "cyberProfile": {
+      "nationalCERT": "INCIBE-CERT / CCN-CERT",
+      "responsibleDisclosure": "INCIBE advisories; vendor PSIRTs",
+      "infosecCompanies": [
+        "S21sec",
+        "Telefonica Tech"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Backups"
+      ],
+      "notableBreaches": [
+        "WannaCry impact incl. Telefónica (2017)"
+      ],
+      "incidents": [
+        {
+          "year": 2017,
+          "title": "WannaCry in Spain",
+          "summary": "Multiple organizations disrupted; early outbreak reports.",
+          "severity": "High",
+          "link": "https://www.incibe.es/"
+        }
+      ],
+      "sources": [
+        "https://www.incibe.es/"
+      ]
+    }
+  },
+  "Portugal": {
+    "code": "PRT",
+    "capital": "Lisbon",
+    "cyberProfile": {
+      "nationalCERT": "CNCS / CERT.PT",
+      "responsibleDisclosure": "CERT.PT; vendor PSIRTs",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "TAP Air Portugal breach (2022)"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "TAP Air Portugal data breach",
+          "summary": "Personal data leak claimed by threat actors.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cncs.gov.pt/"
+      ]
+    }
+  },
+  "Italy": {
+    "code": "ITA",
+    "capital": "Rome",
+    "cyberProfile": {
+      "nationalCERT": "ACN / CERT-PA",
+      "responsibleDisclosure": "ACN guidance; vendor PSIRTs",
+      "notableBreaches": [
+        "Lazio region ransomware (2021)"
+      ],
+      "infosecCompanies": [
+        "Leonardo SpA (cyber division)"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Back up"
+      ],
+      "incidents": [
+        {
+          "year": 2021,
+          "title": "Lazio regional gov ransomware",
+          "summary": "Health booking systems affected.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.acn.gov.it/"
+      ]
+    }
+  },
+  "Poland": {
+    "code": "POL",
+    "capital": "Warsaw",
+    "cyberProfile": {
+      "nationalCERT": "CERT Polska (CSIRT NASK)",
+      "responsibleDisclosure": "CERT Polska coordination; vendor PSIRTs",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly"
+      ],
+      "notableBreaches": [
+        "LOT Polish Airlines incident (2015)",
+        "Gov email hack/leak (2021)"
+      ],
+      "incidents": [
+        {
+          "year": 2015,
+          "title": "LOT Polish Airlines disruption",
+          "summary": "DoS on flight plan systems; flights delayed.",
+          "severity": "Medium",
+          "link": ""
+        },
+        {
+          "year": 2021,
+          "title": "Government email hack/leak",
+          "summary": "Mailbox of senior official compromised; leaks published.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://cert.pl/en/"
+      ]
+    }
+  },
+  "Czechia": {
+    "code": "CZE",
+    "capital": "Prague",
+    "cyberProfile": {
+      "nationalCERT": "CSIRT.CZ / NÚKIB",
+      "responsibleDisclosure": "CSIRT.CZ coordination; vendor PSIRTs",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Hospital cyber incidents (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Hospital cyber incidents",
+          "summary": "Czech hospitals faced disruptions; NÚKIB advisories.",
+          "severity": "Medium",
+          "link": "https://nukib.gov.cz/"
+        }
+      ],
+      "sources": [
+        "https://nukib.gov.cz/"
+      ]
+    }
+  },
+  "Denmark": {
+    "code": "DNK",
+    "capital": "Copenhagen",
+    "cyberProfile": {
+      "nationalCERT": "CFCS / GovCERT",
+      "responsibleDisclosure": "CFCS guidance",
+      "infosecCompanies": [
+        "CSIS Security Group"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly"
+      ],
+      "notableBreaches": [
+        "Maersk NotPetya impact (2017)"
+      ],
+      "incidents": [
+        {
+          "year": 2017,
+          "title": "Maersk impacted by NotPetya",
+          "summary": "Global operations disrupted; major recovery effort.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://cfcs.dk/"
+      ]
+    }
+  },
+  "Sweden": {
+    "code": "SWE",
+    "capital": "Stockholm",
+    "cyberProfile": {
+      "nationalCERT": "MSB / CERT-SE",
+      "responsibleDisclosure": "CERT-SE guidance",
+      "infosecCompanies": [
+        "Detectify"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Kaseya/Coop impact (2021)"
+      ],
+      "incidents": [
+        {
+          "year": 2021,
+          "title": "Kaseya supply chain → Coop",
+          "summary": "POS outage at ~800 stores due to REvil/Kaseya incident.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cert.se/"
+      ]
+    }
+  },
+  "Finland": {
+    "code": "FIN",
+    "capital": "Helsinki",
+    "cyberProfile": {
+      "nationalCERT": "NCSC-FI (Traficom)",
+      "responsibleDisclosure": "NCSC-FI guidance",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly"
+      ],
+      "notableBreaches": [
+        "Vastaamo psychotherapy clinic breach (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Vastaamo breach",
+          "summary": "Sensitive therapy records stolen and extortion attempts.",
+          "severity": "High",
+          "link": "https://www.kyberturvallisuuskeskus.fi/"
+        }
+      ],
+      "sources": [
+        "https://www.kyberturvallisuuskeskus.fi/"
+      ]
+    }
+  },
+  "Ireland": {
+    "code": "IRL",
+    "capital": "Dublin",
+    "cyberProfile": {
+      "nationalCERT": "NCSC Ireland / CSIRT-IE",
+      "responsibleDisclosure": "NCSC-IE guidance",
+      "infosecCompanies": [
+        "Tines"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "HSE (Health Service Executive) ransomware (2021)"
+      ],
+      "incidents": [
+        {
+          "year": 2021,
+          "title": "HSE ransomware",
+          "summary": "National health services severely disrupted; Conti group.",
+          "severity": "High",
+          "link": "https://www.ncsc.gov.ie/"
+        }
+      ],
+      "sources": [
+        "https://www.ncsc.gov.ie/"
+      ]
+    }
+  },
+  "Norway": {
+    "code": "NOR",
+    "capital": "Oslo",
+    "cyberProfile": {
+      "nationalCERT": "NorCERT (NSM)",
+      "responsibleDisclosure": "NSM guidance / vendor contacts",
+      "infosecCompanies": [
+        "Mnemonic",
+        "Promon"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep BankID/OS updated"
+      ],
+      "notableBreaches": [
+        "Norsk Hydro (2019)",
+        "Parliament email compromise (2021)"
+      ],
+      "incidents": [
+        {
+          "year": 2019,
+          "title": "Norsk Hydro ransomware (LockerGoga)",
+          "summary": "Production disruption; transparent comms.",
+          "severity": "High",
+          "link": "https://www.hydro.com/en/global/media/on-the-agenda/cyber-attack/"
+        },
+        {
+          "year": 2021,
+          "title": "Stortinget email compromise",
+          "summary": "Exchange vulns leveraged; accounts affected.",
+          "severity": "Medium",
+          "link": "https://www.stortinget.no/"
+        }
+      ],
+      "sources": [
+        "https://www.nsm.no/",
+        "https://www.hydro.com/"
+      ]
+    }
+  },
+  "Russia": {
+    "code": "RUS",
+    "capital": "Moscow",
+    "cyberProfile": {
+      "nationalCERT": "NCSC (GosSOPKA/CERT-GOV-RU)",
+      "responsibleDisclosure": "Via vendors / national processes",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Multiple gov/critical incidents reported publicly/privately"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "Various service disruptions",
+          "summary": "Multiple reported incidents amid heightened tensions.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Ukraine": {
+    "code": "UKR",
+    "capital": "Kyiv",
+    "cyberProfile": {
+      "nationalCERT": "CERT-UA",
+      "responsibleDisclosure": "CERT-UA advisories; vendor PSIRTs",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Backups",
+        "Network segmentation"
+      ],
+      "notableBreaches": [
+        "Power grid attacks (2015/2016)",
+        "NotPetya (2017)"
+      ],
+      "incidents": [
+        {
+          "year": 2015,
+          "title": "Power grid cyberattack",
+          "summary": "Outages caused via ICS intrusion.",
+          "severity": "High",
+          "link": ""
+        },
+        {
+          "year": 2017,
+          "title": "NotPetya outbreak",
+          "summary": "Widespread disruption originated in Ukraine (tax software).",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://cert.gov.ua/"
+      ]
+    }
+  },
+  "Turkey": {
+    "code": "TUR",
+    "capital": "Ankara",
+    "cyberProfile": {
+      "nationalCERT": "USOM (TR-CERT)",
+      "responsibleDisclosure": "TR-CERT advisories",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "2016 massive citizen data leak (reported)"
+      ],
+      "incidents": [
+        {
+          "year": 2016,
+          "title": "Citizen data leak",
+          "summary": "Large dataset of citizen records leaked online.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.usom.gov.tr/"
+      ]
+    }
+  },
+  "Israel": {
+    "code": "ISR",
+    "capital": "Jerusalem*",
+    "cyberProfile": {
+      "nationalCERT": "Israel National Cyber Directorate (INCD)",
+      "responsibleDisclosure": "INCD guidance; vendor PSIRTs",
+      "infosecCompanies": [
+        "Check Point",
+        "CyberArk"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Zero trust"
+      ],
+      "notableBreaches": [
+        "Shirbit insurance breach (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Shirbit breach",
+          "summary": "Sensitive data of customers leaked.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.gov.il/en/departments/israel_national_cyber_directorate"
+      ]
+    }
+  },
+  "Saudi Arabia": {
+    "code": "SAU",
+    "capital": "Riyadh",
+    "cyberProfile": {
+      "nationalCERT": "NCA / CERT-SA",
+      "responsibleDisclosure": "NCA guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Backups",
+        "Segmentation"
+      ],
+      "notableBreaches": [
+        "Shamoon attacks on energy sector (2012, 2016)"
+      ],
+      "incidents": [
+        {
+          "year": 2012,
+          "title": "Shamoon wiper (Saudi Aramco)",
+          "summary": "Destructive malware wiped thousands of endpoints.",
+          "severity": "High",
+          "link": ""
+        },
+        {
+          "year": 2016,
+          "title": "Shamoon 2",
+          "summary": "Renewed wiper activity against organizations.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://nca.gov.sa/"
+      ]
+    }
+  },
+  "United Arab Emirates": {
+    "code": "ARE",
+    "capital": "Abu Dhabi",
+    "cyberProfile": {
+      "nationalCERT": "aeCERT",
+      "responsibleDisclosure": "aeCERT guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.aecert.ae/"
+      ]
+    }
+  },
+  "India": {
+    "code": "IND",
+    "capital": "New Delhi",
+    "cyberProfile": {
+      "nationalCERT": "CERT-In",
+      "responsibleDisclosure": "CERT-In vulnerability reporting; vendor PSIRTs",
+      "infosecCompanies": [
+        "Tata Advanced Systems (cyber)"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch"
+      ],
+      "notableBreaches": [
+        "AIIMS Delhi ransomware (2022)",
+        "Aadhaar-related data exposure reports (2018)"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "AIIMS Delhi ransomware",
+          "summary": "Hospital systems disrupted; patient services impacted.",
+          "severity": "High",
+          "link": ""
+        },
+        {
+          "year": 2018,
+          "title": "Aadhaar data exposure reports",
+          "summary": "Media reports of unauthorized access to citizen data.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cert-in.org.in/"
+      ]
+    }
+  },
+  "China": {
+    "code": "CHN",
+    "capital": "Beijing",
+    "cyberProfile": {
+      "nationalCERT": "CNCERT/CC",
+      "responsibleDisclosure": "CNCERT coordination; vendor PSIRTs",
+      "topVendors": [
+        "Huawei",
+        "Tencent",
+        "Alibaba"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly"
+      ],
+      "notableBreaches": [
+        "Alleged Shanghai police data leak (2022)"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "Shanghai police data leak (reported)",
+          "summary": "Large dataset allegedly leaked online.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cert.org.cn/"
+      ]
+    }
+  },
+  "South Korea": {
+    "code": "KOR",
+    "capital": "Seoul",
+    "cyberProfile": {
+      "nationalCERT": "KrCERT/CC",
+      "responsibleDisclosure": "KrCERT/CC coordination",
+      "topVendors": [
+        "Samsung",
+        "LG",
+        "Microsoft"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Korea Hydro & Nuclear Power data leak (2014)"
+      ],
+      "incidents": [
+        {
+          "year": 2014,
+          "title": "KHNP data leak",
+          "summary": "Sensitive data published online; investigations conducted.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.krcert.or.kr/"
+      ]
+    }
+  },
+  "Singapore": {
+    "code": "SGP",
+    "capital": "Singapore",
+    "cyberProfile": {
+      "nationalCERT": "SingCERT (CSA)",
+      "responsibleDisclosure": "CSA vulnerability disclosure guidelines",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Patch quickly"
+      ],
+      "notableBreaches": [
+        "SingHealth breach (2018)"
+      ],
+      "incidents": [
+        {
+          "year": 2018,
+          "title": "SingHealth data breach",
+          "summary": "Personal data of ~1.5M patients exfiltrated.",
+          "severity": "High",
+          "link": "https://www.csa.gov.sg/"
+        }
+      ],
+      "sources": [
+        "https://www.csa.gov.sg/"
+      ]
+    }
+  },
+  "Malaysia": {
+    "code": "MYS",
+    "capital": "Kuala Lumpur",
+    "cyberProfile": {
+      "nationalCERT": "MyCERT (CyberSecurity Malaysia)",
+      "responsibleDisclosure": "MyCERT guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Multiple government/telecom leaks reported (2022)"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "Reported data leaks",
+          "summary": "Media reported leaks affecting gov/telecom databases.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.mycert.org.my/"
+      ]
+    }
+  },
+  "Indonesia": {
+    "code": "IDN",
+    "capital": "Jakarta",
+    "cyberProfile": {
+      "nationalCERT": "ID-SIRTII/CC",
+      "responsibleDisclosure": "National guidance / vendor PSIRTs",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Tokopedia user data leak (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Tokopedia data leak",
+          "summary": "User account data appeared on forums; company reset passwords.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://idsirtii.or.id/"
+      ]
+    }
+  },
+  "Thailand": {
+    "code": "THA",
+    "capital": "Bangkok",
+    "cyberProfile": {
+      "nationalCERT": "ThaiCERT (ETDA)",
+      "responsibleDisclosure": "ThaiCERT guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Bangkok Airways breach (2021)"
+      ],
+      "incidents": [
+        {
+          "year": 2021,
+          "title": "Bangkok Airways breach",
+          "summary": "Personal data leak disclosed by airline.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.thaicert.or.th/"
+      ]
+    }
+  },
+  "Vietnam": {
+    "code": "VNM",
+    "capital": "Hanoi",
+    "cyberProfile": {
+      "nationalCERT": "VNCERT/CC",
+      "responsibleDisclosure": "VNCERT coordination; vendor PSIRTs",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Large forum and e-commerce leaks reported (2020+)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Reported data leaks",
+          "summary": "Multiple platform breaches/leaks reported in media.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.vncert.gov.vn/"
+      ]
+    }
+  },
+  "Philippines": {
+    "code": "PHL",
+    "capital": "Manila",
+    "cyberProfile": {
+      "nationalCERT": "PH-CERT / NTC initiatives",
+      "responsibleDisclosure": "Vendor PSIRTs",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Comelec voter data breach (2016)"
+      ],
+      "incidents": [
+        {
+          "year": 2016,
+          "title": "Comelec data breach",
+          "summary": "Voter database leak widely reported.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Australia": {
+    "code": "AUS",
+    "capital": "Canberra",
+    "cyberProfile": {
+      "nationalCERT": "ACSC (CERT Australia)",
+      "responsibleDisclosure": "ACSC, OAIC guidance; vendor PSIRTs",
+      "infosecCompanies": [
+        "Canva (security team)"
+      ],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Backups"
+      ],
+      "notableBreaches": [
+        "Optus breach (2022)",
+        "Medibank breach (2022)"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "Optus data breach",
+          "summary": "Millions of customer records exposed.",
+          "severity": "High",
+          "link": ""
+        },
+        {
+          "year": 2022,
+          "title": "Medibank data breach",
+          "summary": "Sensitive medical data leaked following extortion.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cyber.gov.au/"
+      ]
+    }
+  },
+  "New Zealand": {
+    "code": "NZL",
+    "capital": "Wellington",
+    "cyberProfile": {
+      "nationalCERT": "CERT NZ",
+      "responsibleDisclosure": "CERT NZ guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "NZX stock exchange DDoS (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "NZX DDoS",
+          "summary": "Trading halted across several days due to DDoS.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cert.govt.nz/"
+      ]
+    }
+  },
+  "Canada": {
+    "code": "CAN",
+    "capital": "Ottawa",
+    "cyberProfile": {
+      "nationalCERT": "CCCS (Canadian Centre for Cyber Security)",
+      "responsibleDisclosure": "CCCS advisories; vendor PSIRTs",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Desjardins data breach (2019)"
+      ],
+      "incidents": [
+        {
+          "year": 2019,
+          "title": "Desjardins breach",
+          "summary": "Personal info of millions exposed by insider/poor controls.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cyber.gc.ca/"
+      ]
+    }
+  },
+  "Mexico": {
+    "code": "MEX",
+    "capital": "Mexico City",
+    "cyberProfile": {
+      "nationalCERT": "CERT-MX",
+      "responsibleDisclosure": "CERT-MX guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Pemex ransomware (2019)"
+      ],
+      "incidents": [
+        {
+          "year": 2019,
+          "title": "Pemex ransomware",
+          "summary": "Oil company operations affected; ransom demanded.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.gob.mx/ciirt"
+      ]
+    }
+  },
+  "Brazil": {
+    "code": "BRA",
+    "capital": "Brasília",
+    "cyberProfile": {
+      "nationalCERT": "CERT.br (NIC.br)",
+      "responsibleDisclosure": "CERT.br advisories",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Large CPF/credit data leaks reported (2019/2021)"
+      ],
+      "incidents": [
+        {
+          "year": 2021,
+          "title": "Reported massive data leaks",
+          "summary": "CPF and other datasets appeared for sale; authorities investigated.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cert.br/"
+      ]
+    }
+  },
+  "Argentina": {
+    "code": "ARG",
+    "capital": "Buenos Aires",
+    "cyberProfile": {
+      "nationalCERT": "CERT.ar",
+      "responsibleDisclosure": "CERT.ar guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Migration agency ransomware (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Argentine migration agency ransomware",
+          "summary": "Border crossings disrupted temporarily.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.argentina.gob.ar/modernizacion/seguridad-informatica"
+      ]
+    }
+  },
+  "Chile": {
+    "code": "CHL",
+    "capital": "Santiago",
+    "cyberProfile": {
+      "nationalCERT": "CSIRT de Gobierno",
+      "responsibleDisclosure": "Gov CSIRT guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Banco de Chile incident (2018)"
+      ],
+      "incidents": [
+        {
+          "year": 2018,
+          "title": "Banco de Chile cyber incident",
+          "summary": "SWIFT-related incident reported; losses disclosed.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.csirt.gob.cl/"
+      ]
+    }
+  },
+  "South Africa": {
+    "code": "ZAF",
+    "capital": "Pretoria (admin)",
+    "cyberProfile": {
+      "nationalCERT": "ZA-CERT / CSIRT (various)",
+      "responsibleDisclosure": "Vendor PSIRTs",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [
+        "Transnet ransomware (2021)",
+        "Experian SA data leak (2020)"
+      ],
+      "incidents": [
+        {
+          "year": 2021,
+          "title": "Transnet ransomware",
+          "summary": "Port operations disrupted; force majeure declared.",
+          "severity": "High",
+          "link": ""
+        },
+        {
+          "year": 2020,
+          "title": "Experian South Africa data leak",
+          "summary": "Personal data of millions exposed.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Egypt": {
+    "code": "EGY",
+    "capital": "Cairo",
+    "cyberProfile": {
+      "nationalCERT": "EG-CERT",
+      "responsibleDisclosure": "EG-CERT guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.egcert.eg/"
+      ]
+    }
+  },
+  "Morocco": {
+    "code": "MAR",
+    "capital": "Rabat",
+    "cyberProfile": {
+      "nationalCERT": "maCERT",
+      "responsibleDisclosure": "National guidance",
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.dgssi.gov.ma/"
+      ]
+    }
+  }
+}

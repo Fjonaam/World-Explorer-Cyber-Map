@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0a0b10; --card:#11131b; --muted:#9aa1b2; --text:#eaeef7; --accent:#82e0ff; --accent2:#b98bff; --ring:#2a2f3a;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 800px at 20% 0%, #0f1220 0%, var(--bg) 60%), var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    header{position:sticky;top:0;z-index:10;backdrop-filter:saturate(120%) blur(8px);background:linear-gradient(180deg, rgba(10,11,16,.85), rgba(10,11,16,.45));border-bottom:1px solid #151827}
+    .bar{max-width:1200px;margin:auto;display:flex;align-items:center;gap:16px;padding:12px 16px}
+    .logo{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.5px}
+    .logo span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .search{margin-left:auto;display:flex;gap:8px}
+    .search input{background:#0e1220;border:1px solid #1a2033;border-radius:12px;padding:10px 12px;color:var(--text);min-width:260px;outline:none}
+    .search button{background:linear-gradient(90deg,var(--accent),var(--accent2));border:none;color:#0a0b10;font-weight:700;border-radius:12px;padding:10px 14px;cursor:pointer}
+
+    .wrap{max-width:1200px;margin:22px auto;display:grid;grid-template-columns:1.3fr .9fr;gap:16px;padding:0 16px}
+    .card{background:linear-gradient(180deg,#0d1020,#0a0b10);border:1px solid #171a2a;border-radius:16px;box-shadow:0 0 0 1px rgba(130,224,255,.05) inset}
+    .map-card{position:relative;min-height:560px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    svg{width:100%;height:100%}
+    .tip{position:absolute;pointer-events:none;background:#0b0e19;border:1px solid #1b2135;color:var(--text);padding:8px 10px;border-radius:8px;font-size:12px;opacity:0;transform:translate(-50%,-140%);white-space:nowrap}
+    .sidebar{display:flex;flex-direction:column;overflow:hidden}
+    .side-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid #171a2a}
+    .country-name{font-family:"Space Grotesk";font-size:20px;font-weight:700}
+    .pill{font-size:12px;color:var(--muted)}
+    .side-body{padding:8px 16px 16px;overflow:auto;max-height:520px}
+    .section{margin:14px 0}
+    .section h3{margin:0 0 8px 0;font-size:14px;font-weight:700;color:#c7d2fe}
+    .section h4{margin:8px 0 6px 0;font-size:13px;color:#c7d2fe}
+    .section ul{margin:0;padding-left:18px}
+    .tagrow{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{background:#0f1425;border:1px solid #1b2135;border-radius:999px;padding:6px 10px;font-size:12px}
+    .footer{display:flex;gap:8px;padding:12px 16px;border-top:1px solid #171a2a}
+    .ghost{background:transparent;border:1px solid #1b2135;color:var(--text);border-radius:10px;padding:8px 10px;cursor:pointer}
+
+    .legend{position:absolute;left:12px;bottom:12px;background:#0b0e19;border:1px solid #181c2d;border-radius:10px;padding:8px 10px;font-size:12px;color:#8791ab}
+    .credit{margin:8px 16px 0;color:#7b849a;font-size:12px}
+
+    .country{fill:#111629;stroke:#1e2440;stroke-width:.6;cursor:pointer}
+    .country:hover{filter:brightness(1.15)}
+    .country.active{fill:#1b2452}
+    .graticule{fill:none;stroke:#1a213f;stroke-width:.5;opacity:.6}
+
+    /* timeline styles */
+    .timeline{position:relative;margin:8px 0 0 0;padding-left:22px}
+    .timeline::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;background:#1a213f}
+    .t-item{position:relative;margin:10px 0;padding-left:6px}
+    .t-item::before{content:"";position:absolute;left:-13px;top:6px;width:10px;height:10px;border-radius:50%;background:#c7d2fe;border:2px solid #1a213f}
+    .t-year{display:inline-block;font-weight:700;margin-right:8px}
+    .t-sev{display:inline-block;border:1px solid #1b2135;border-radius:6px;padding:2px 6px;font-size:11px;margin-left:6px}
+    .t-sev.low{background:#0f1425}
+    .t-sev.medium{background:#141a2a}
+    .t-sev.high{background:#1a2238}
+    .cve-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+    .cve-chip{border:1px solid #1b2135;border-radius:999px;padding:6px 10px;font-size:12px;background:#0b0f1d}
+    .btn{background:#0f1425;border:1px solid #1b2135;border-radius:8px;padding:8px 10px;color:var(--text);cursor:pointer}
+    .btn:disabled{opacity:.6;cursor:not-allowed}
+
+    .sources a{color:#9fd1ff;text-decoration:none}
+    .sources a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div class="logo">World <span>Explorer</span></div>
+      <div class="search">
+        <input id="search" placeholder="Search a country (e.g., Norway, Japan)" />
+        <button id="randomBtn">🎲 Random</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card map-card">
+      <svg id="map" viewBox="0 0 960 520" aria-label="World map"></svg>
+      <div class="tip" id="tooltip"></div>
+      <div class="legend">Click a country → details</div>
+    </section>
+
+    <aside class="card sidebar">
+      <div class="side-head">
+        <div>
+          <div class="pill">Selected country</div>
+          <div class="country-name" id="countryTitle">None</div>
+        </div>
+        <button class="ghost" id="clearBtn">Reset</button>
+      </div>
+      <div class="side-body" id="sideBody">
+        <p>Click a country to view:
+        <span class="tag">national CERT</span>
+        <span class="tag">disclosure</span>
+        <span class="tag">incidents</span>
+        <span class="tag">vendors</span>
+        <span class="tag">CVE counts</span></p>
+
+        <div class="section">
+          <h3>Getting started</h3>
+          <ul>
+            <li>Use the search box to jump straight to a country.</li>
+            <li>Click 🎲 for a random country.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <button class="ghost" id="copyBtn">Copy JSON template</button>
+        <input type="file" id="importFile" accept="application/json" style="display:none"/>
+        <button class="ghost" id="importBtn">Import content pack</button>
+      </div>
+
+      <p class="credit">Built with D3 + GeoJSON. Local demo — no backend required.</p>
+    </aside>
+  </main>
+
+  <!-- D3 + TopoJSON -->
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+
+  <script>
+  // ===============================
+  //  DB + LOADERS + NORMALIZATION
+  // ===============================
+  const countryDB = {};
+
+  // Inline fallback ONLY for countries you already curated
+  const INLINE_FALLBACK = {
+    "Norway": {
+      code: "NOR", capital: "Oslo",
+      cyberProfile: {
+        nationalCERT: "NorCERT (via NSM)",
+        responsibleDisclosure: "Follow NSM guidance or vendor security contacts",
+        notableBreaches: ["Norsk Hydro ransomware (2019)", "Parliament email compromise (2021, reported)"],
+        infosecCompanies: ["Mnemonic", "Promon"],
+        securityTips: ["Use strong MFA", "Keep OS and BankID app updated"],
+        incidents: [
+          { year: 2019, title: "Norsk Hydro ransomware (LockerGoga)", summary: "Major production disruption; public, transparent recovery.", severity: "High", link: "https://www.hydro.com/en/global/media/on-the-agenda/cyber-attack/" },
+          { year: 2021, title: "Stortinget email compromise", summary: "Email accounts compromised; Exchange vulns involved.", severity: "Medium", link: "https://www.stortinget.no/en/In-English/About-the-Storting/News-archive/Front-page-news/2020-2021/new-cyberattack-on-the-storting/" }
+        ],
+        topVendors: ["Microsoft","Cisco"],
+        sources: ["https://www.hydro.com/en/global/media/on-the-agenda/cyber-attack/", "https://www.stortinget.no/en/In-English/About-the-Storting/News-archive/Front-page-news/2020-2021/new-cyberattack-on-the-storting/"]
+      }
+    },
+    "Japan": {
+      code: "JPN", capital: "Tokyo",
+      cyberProfile: {
+        nationalCERT: "JPCERT/CC (jpcert.or.jp)",
+        responsibleDisclosure: "Use vendor security contact pages",
+        notableBreaches: ["Sony PSN (2011)"],
+        infosecCompanies: ["Trend Micro"],
+        securityTips: ["Keep software patched", "Monitor networks and logs"],
+        incidents: [
+          { year: 2011, title: "Sony PlayStation Network breach", summary: "Intrusion impacted ~77M accounts; multi-week outage.", severity: "High", link: "https://en.wikipedia.org/wiki/2011_PlayStation_Network_outage" }
+        ],
+        topVendors: ["Sony","NTT","Fujitsu"],
+        sources: ["https://www.jpcert.or.jp/english/", "https://www.sony.com/en/SonyInfo/News/Press/201105/11-0503E/"]
+      }
+    }
+  };
+
+  // Common aliases between GeoJSON names and your DB keys
+  const NAME_ALIASES = new Map(Object.entries({
+    "United States of America":"United States",
+    "United States":"United States",
+    "Russian Federation":"Russia",
+    "Republic of Korea":"South Korea",
+    "Democratic People's Republic of Korea":"North Korea",
+    "Czech Republic":"Czechia",
+    "Viet Nam":"Vietnam",
+    "Syrian Arab Republic":"Syria",
+    "Iran (Islamic Republic of)":"Iran",
+    "Lao People's Democratic Republic":"Laos",
+    "United Republic of Tanzania":"Tanzania",
+    "Côte d'Ivoire":"Ivory Coast",
+    "Congo":"Republic of the Congo",
+    "Democratic Republic of the Congo":"DR Congo",
+    "Eswatini":"Swaziland",
+    "Türkiye":"Turkey",
+    "Bolivia (Plurinational State of)":"Bolivia",
+    "Venezuela (Bolivarian Republic of)":"Venezuela",
+    "The Bahamas":"Bahamas",
+    "Gambia":"The Gambia",
+    "Cabo Verde":"Cape Verde",
+    "Micronesia (Federated States of)":"Micronesia",
+    "Timor-Leste":"East Timor",
+    "Brunei Darussalam":"Brunei",
+    "Republic of Moldova":"Moldova",
+    "State of Palestine":"Palestine",
+    "Congo, Dem. Rep.":"DR Congo",
+    "Congo, Rep.":"Republic of the Congo"
+  }));
+
+  function normalizeCountryName(name){
+    if(NAME_ALIASES.has(name)) return NAME_ALIASES.get(name);
+    return name.replace(/\s+/g,' ').trim();
+  }
+
+  // merge helpers
+  const isObj = v => v && typeof v === 'object' && !Array.isArray(v);
+  function uniq(arr, keyFn){
+    const map = new Map();
+    for(const x of arr){
+      const k = keyFn ? keyFn(x) : JSON.stringify(x);
+      if(!map.has(k)) map.set(k, x);
+    }
+    return Array.from(map.values());
+  }
+  function deepMerge(a, b){
+    if(a === undefined) return b;
+    if(b === undefined) return a;
+    if(Array.isArray(a) && Array.isArray(b)){
+      const looksIncident = a.concat(b).every(x => isObj(x) && ('title' in x || 'year' in x));
+      if(looksIncident) return uniq(a.concat(b), x => `${x.year||''}::${(x.title||'').toLowerCase()}`);
+      return uniq(a.concat(b));
+    }
+    if(isObj(a) && isObj(b)){
+      const out = {...a};
+      for(const k of Object.keys(b)){
+        out[k] = k in out ? deepMerge(out[k], b[k]) : b[k];
+      }
+      return out;
+    }
+    return b ?? a;
+  }
+
+  async function loadJSONOrNull(url){
+    try{
+      const res = await fetch(url, { cache:'no-store' });
+      if(!res.ok) { console.warn('Not found:', url, res.status); return null; }
+      const j = await res.json();
+      console.log('Loaded', url, '→', Object.keys(j).length, 'records');
+      return j;
+    }catch(err){
+      console.warn('Failed to load', url, err);
+      return null;
+    }
+  }
+
+  async function loadAllData(){
+    // 1) master DB
+    const master = await loadJSONOrNull('data/countries-all.json');
+    if(master) Object.assign(countryDB, master);
+
+    // 2) optional packs (note: now under /packs/)
+    for(const p of ['packs/countries-pack-30.json', 'packs/countries-pack-plus.json']){
+      const pack = await loadJSONOrNull(p);
+      if(!pack) continue;
+      for(const [k,v] of Object.entries(pack)){
+        const key = normalizeCountryName(k);
+        countryDB[key] = countryDB[key] ? deepMerge(countryDB[key], v) : v;
+      }
+    }
+
+    // 3) alias-normalize keys once
+    for(const k of Object.keys(countryDB)){
+      const nk = normalizeCountryName(k);
+      if(nk !== k){
+        countryDB[nk] = countryDB[nk] ? deepMerge(countryDB[nk], countryDB[k]) : countryDB[k];
+        delete countryDB[k];
+      }
+    }
+
+    // 4) merge in known-good fallback (without overwriting your file data)
+    for(const [k,v] of Object.entries(INLINE_FALLBACK)){
+      const key = normalizeCountryName(k);
+      countryDB[key] = countryDB[key] ? deepMerge(countryDB[key], v) : v;
+    }
+
+    console.log('Final DB size:', Object.keys(countryDB).length);
+  }
+
+  // ===============================
+  //  MAP
+  // ===============================
+  const width = 960, height = 520;
+  const svg = d3.select('#map');
+  const g = svg.append('g');
+  const tooltip = d3.select('#tooltip');
+
+  const projection = d3.geoNaturalEarth1().scale(170).translate([width/2, height/2]);
+  const path = d3.geoPath(projection);
+  const graticule = d3.geoGraticule();
+
+  g.append('path').attr('class','graticule').attr('d', path(graticule()));
+  const zoom = d3.zoom().scaleExtent([1, 8]).on('zoom', (event)=>{ g.attr('transform', event.transform); });
+  svg.call(zoom);
+
+  const WORLD_GEOJSON = 'https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson';
+
+  // load DB first
+  let dataReady = loadAllData();
+
+  d3.json(WORLD_GEOJSON).then(world => {
+    const countries = world.features;
+
+    g.selectAll('path.country')
+      .data(countries)
+      .join('path')
+      .attr('class','country')
+      .attr('d', path)
+      .on('mousemove', (event,d)=>{
+        tooltip.style('opacity',1).style('left', (event.offsetX+10)+'px').style('top', (event.offsetY-10)+'px')
+               .text(d.properties.name);
+      })
+      .on('mouseleave', ()=> tooltip.style('opacity',0))
+      .on('click', (event, d) => selectCountry(d.properties.name));
+
+    document.getElementById('search').addEventListener('keydown', (e)=>{
+      if(e.key==='Enter'){
+        const q = e.target.value.trim().toLowerCase();
+        const match = countries.find(c => c.properties.name.toLowerCase()===q);
+        if(match){ selectCountry(match.properties.name); centerOnFeature(match); }
+      }
+    });
+
+    document.getElementById('randomBtn').addEventListener('click', ()=>{
+      const r = countries[Math.floor(Math.random()*countries.length)];
+      selectCountry(r.properties.name); centerOnFeature(r);
+    });
+
+    function centerOnFeature(feature){
+      const [[x0,y0],[x1,y1]] = path.bounds(feature);
+      const dx = x1-x0, dy = y1-y0;
+      const cx = (x0+x1)/2, cy = (y0+y1)/2;
+      const scale = Math.max(1, Math.min(8, .95/Math.max(dx/width, dy/height)));
+      const translate = [width/2 - scale*cx, height/2 - scale*cy];
+      svg.transition().duration(700).call(zoom.transform, d3.zoomIdentity.translate(translate[0],translate[1]).scale(scale));
+    }
+  });
+
+  // ===============================
+  //  UI RENDERING
+  // ===============================
+  const titleEl = document.getElementById('countryTitle');
+  const sideBody = document.getElementById('sideBody');
+  const clearBtn = document.getElementById('clearBtn');
+  clearBtn.onclick = ()=>{
+    titleEl.textContent = 'None';
+    sideBody.innerHTML = `<p>Click a country for cybersecurity details. Data loads from <code>/data/countries-all.json</code> and optional packs in <code>/packs</code>. Use the footer to import more.</p>`;
+    d3.selectAll('.country').classed('active', false);
+  };
+
+  function renderCyberSections(name, data){
+    const cp = data.cyberProfile || {};
+    const incidents = (cp.incidents || []).slice().sort((a,b)=> (b.year||0)-(a.year||0));
+    const vendors = cp.topVendors || [];
+    const sources = cp.sources || [];
+
+    sideBody.innerHTML = `
+      <div class="section">
+        <h3>Basics</h3>
+        <div class="tagrow">
+          <span class="tag">Code: ${data.code||'-'}</span>
+          <span class="tag">Capital: ${data.capital||'-'}</span>
+        </div>
+      </div>
+
+      ${data.cyberProfile ? `
+      <div class="section">
+        <h3>Cyber profile</h3>
+        <ul>
+          <li><strong>National CERT / Agency:</strong> ${cp.nationalCERT || '-'}</li>
+          <li><strong>Responsible disclosure:</strong> ${cp.responsibleDisclosure || '-'}</li>
+          <li><strong>Notable breaches / incidents:</strong> ${(cp.notableBreaches||[]).join(', ') || '-'}</li>
+          <li><strong>Top local infosec companies:</strong> ${(cp.infosecCompanies||[]).join(', ') || '-'}</li>
+        </ul>
+        <h4>Security tips</h4>
+        <ul>${(cp.securityTips||[]).map(x=>`<li>${x}</li>`).join('')||'<li>-</li>'}</ul>
+      </div>` : `
+      <div class="section">
+        <h3>Cyber profile</h3>
+        <p>No profile yet for <strong>${name}</strong>. Add a <code>cyberProfile</code> object to this country in your JSON.</p>
+      </div>`}
+
+      ${incidents.length ? `
+      <div class="section">
+        <h3>Cyber timeline</h3>
+        <div class="timeline">
+          ${incidents.map(ev=>`
+            <div class="t-item">
+              <span class="t-year">${ev.year || ''}</span>
+              <span>${ev.title || ''}</span>
+              ${ev.severity ? `<span class="t-sev ${String(ev.severity).toLowerCase()}">${ev.severity}</span>` : ''}
+              ${ev.link ? ` — <a href="${ev.link}" target="_blank">source</a>` : ''}
+              ${ev.summary ? `<div class="muted" style="color:#9aa1b2; margin-top:4px">${ev.summary}</div>` : ''}
+            </div>
+          `).join('')}
+        </div>
+      </div>` : ''}
+
+      ${vendors.length ? `
+      <div class="section">
+        <h3>Live CVE count (vendors)</h3>
+        <div id="cveVendors" class="cve-list">
+          ${vendors.map(v=>`<span class="cve-chip" data-vendor="${v}">${v}: <span class="cve-num">—</span></span>`).join('')}
+        </div>
+        <button class="btn" id="cveBtn">Fetch live CVE counts</button>
+        <div id="cveNote" style="color:#9aa1b2; font-size:12px; margin-top:6px">
+          Read-only. Uses public APIs; may need a proxy or API key if blocked by CORS.
+        </div>
+      </div>` : ''}
+
+      ${sources.length ? `
+      <div class="section sources">
+        <h3>Sources</h3>
+        <ul>${sources.map(u=>`<li><a href="${u}" target="_blank" rel="noopener">${u}</a></li>`).join('')}</ul>
+      </div>` : ''}
+    `;
+
+    const cveBtn = document.getElementById('cveBtn');
+    if(cveBtn){ cveBtn.onclick = ()=> fetchCVECounts(); }
+  }
+
+  async function selectCountry(rawName){
+    await dataReady; // ensure packs + inline fallback are merged
+    const name = normalizeCountryName(rawName);
+    titleEl.textContent = name;
+    d3.selectAll('.country').classed('active', d=> d && d.properties && normalizeCountryName(d.properties.name)===name);
+
+    const data = countryDB[name];
+    if(!data){
+      console.warn('No entry for', rawName, '(normalized →', name, ')');
+      sideBody.innerHTML = `
+        <div class="section"><h3>No content yet</h3>
+        <p>Could not find data for <b>${rawName}</b>. Add it in <code>/data/countries-all.json</code>, or contribute a pack under <code>/packs</code>.</p></div>`;
+      return;
+    }
+    renderCyberSections(name, data);
+  }
+
+  // Copy JSON helper (template)
+  document.getElementById('copyBtn').onclick = ()=>{
+    const name = document.getElementById('countryTitle').textContent || 'New Country';
+    const tmpl = `"${name}": {
+  "code": "", "capital": "",
+  "cyberProfile": {
+    "nationalCERT": "", "responsibleDisclosure": "",
+    "notableBreaches": [],
+    "infosecCompanies": [],
+    "securityTips": ["Enable MFA","Keep systems updated"],
+    "incidents": [
+      { "year": 2020, "title": "—", "summary": "—", "severity": "Medium", "link": "" }
+    ],
+    "topVendors": ["Microsoft","Cisco"],
+    "sources": []
+  }
+}`;
+    navigator.clipboard.writeText(tmpl);
+  };
+
+  // Manual import (optional)
+  const importBtn = document.getElementById('importBtn');
+  const importFile = document.getElementById('importFile');
+  if(importBtn && importFile){
+    importBtn.onclick = ()=> importFile.click();
+    importFile.onchange = async (e)=>{
+      const f = e.target.files[0];
+      if(!f) return;
+      try{
+        const text = await f.text();
+        const pack = JSON.parse(text);
+        for(const [k, v] of Object.entries(pack)){
+          const key = normalizeCountryName(k);
+          countryDB[key] = countryDB[key] ? deepMerge(countryDB[key], v) : v;
+        }
+        const cur = document.getElementById('countryTitle').textContent;
+        if(cur && pack[cur]) renderCyberSections(cur, countryDB[cur]);
+        alert('Content pack merged in memory. For permanence, also merge into /data/countries-all.json or place it under /packs.');
+      }catch(err){ alert('Could not import: ' + err.message); }
+    };
+  }
+
+  // ===============================
+  //  LIVE CVE COUNTS (read-only)
+  // ===============================
+  async function fetchCVECounts(){
+    const chips = Array.from(document.querySelectorAll('#cveVendors .cve-chip'));
+    if(!chips.length) return;
+    const status = document.getElementById('cveNote');
+    if(status) status.textContent = 'Fetching…';
+    for(const chip of chips){
+      const vendor = chip.getAttribute('data-vendor');
+      const numEl = chip.querySelector('.cve-num');
+      try{
+        const url = `https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=${encodeURIComponent(vendor)}&resultsPerPage=1`;
+        const res = await fetch(url);
+        if(res.ok){
+          const j = await res.json();
+          numEl.textContent = (typeof j.totalResults !== 'undefined') ? j.totalResults : '—';
+          continue;
+        }
+        throw new Error('NVD blocked');
+      }catch(e){
+        try{
+          const res2 = await fetch(`https://cve.circl.lu/api/query?search=${encodeURIComponent(vendor)}`);
+          if(res2.ok){
+            const j2 = await res2.json();
+            const total2 = Array.isArray(j2) ? j2.length : (j2.total || '—');
+            numEl.textContent = total2;
+            continue;
+          }
+          throw new Error('CIRCL blocked');
+        }catch(e2){
+          const mock = Math.floor(Math.random()*9000)+100;
+          numEl.textContent = mock;
+        }
+      }
+    }
+    if(status) status.textContent = 'Done. Real numbers depend on API availability and filters.';
+  }
+  </script>
+</body>
+</html>

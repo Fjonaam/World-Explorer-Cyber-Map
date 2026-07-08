@@ -1,0 +1,2280 @@
+{
+  "Estonia": {
+    "code": "EST",
+    "capital": "Tallinn",
+    "cyberProfile": {
+      "nationalCERT": "CERT-EE (RIA)",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "2007 DDoS against Estonia"
+      ],
+      "incidents": [
+        {
+          "year": 2007,
+          "title": "2007 DDoS against Estonia",
+          "summary": "Large-scale DDoS targeted gov/financial/media sites.",
+          "severity": "High",
+          "link": "https://www.ria.ee/en/cyber-security.html"
+        }
+      ],
+      "sources": [
+        "https://www.ria.ee/en/cyber-security.html"
+      ]
+    }
+  },
+  "Latvia": {
+    "code": "LVA",
+    "capital": "Riga",
+    "cyberProfile": {
+      "nationalCERT": "CERT.LV",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://cert.lv/en/"
+      ]
+    }
+  },
+  "Lithuania": {
+    "code": "LTU",
+    "capital": "Vilnius",
+    "cyberProfile": {
+      "nationalCERT": "NKSC / CERT-LT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.nksc.lt/en/"
+      ]
+    }
+  },
+  "Slovakia": {
+    "code": "SVK",
+    "capital": "Bratislava",
+    "cyberProfile": {
+      "nationalCERT": "SK-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.sk-cert.sk/"
+      ]
+    }
+  },
+  "Slovenia": {
+    "code": "SVN",
+    "capital": "Ljubljana",
+    "cyberProfile": {
+      "nationalCERT": "SI-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.cert.si/en/"
+      ]
+    }
+  },
+  "Hungary": {
+    "code": "HUN",
+    "capital": "Budapest",
+    "cyberProfile": {
+      "nationalCERT": "GovCERT-Hungary",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://govcert.hu/"
+      ]
+    }
+  },
+  "Romania": {
+    "code": "ROU",
+    "capital": "Bucharest",
+    "cyberProfile": {
+      "nationalCERT": "CERT-RO (DNSC)",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://dnsc.ro/"
+      ]
+    }
+  },
+  "Bulgaria": {
+    "code": "BGR",
+    "capital": "Sofia",
+    "cyberProfile": {
+      "nationalCERT": "GovCERT Bulgaria",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.govcert.bg/"
+      ]
+    }
+  },
+  "Croatia": {
+    "code": "HRV",
+    "capital": "Zagreb",
+    "cyberProfile": {
+      "nationalCERT": "CERT.hr",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.cert.hr/en/"
+      ]
+    }
+  },
+  "Greece": {
+    "code": "GRC",
+    "capital": "Athens",
+    "cyberProfile": {
+      "nationalCERT": "Hellenic CSIRT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://csirt.gov.gr/"
+      ]
+    }
+  },
+  "Cyprus": {
+    "code": "CYP",
+    "capital": "Nicosia",
+    "cyberProfile": {
+      "nationalCERT": "CY-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.digitalsecurity.gov.cy/cert/"
+      ]
+    }
+  },
+  "Malta": {
+    "code": "MLT",
+    "capital": "Valletta",
+    "cyberProfile": {
+      "nationalCERT": "CSIRT Malta",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.csirt.gov.mt/"
+      ]
+    }
+  },
+  "Luxembourg": {
+    "code": "LUX",
+    "capital": "Luxembourg",
+    "cyberProfile": {
+      "nationalCERT": "GOVCERT.LU",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.govcert.lu/"
+      ]
+    }
+  },
+  "Iceland": {
+    "code": "ISL",
+    "capital": "Reykjavík",
+    "cyberProfile": {
+      "nationalCERT": "CERT-IS",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.cert.is/"
+      ]
+    }
+  },
+  "Liechtenstein": {
+    "code": "LIE",
+    "capital": "Vaduz",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Albania": {
+    "code": "ALB",
+    "capital": "Tirana",
+    "cyberProfile": {
+      "nationalCERT": "AL-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Government services disruption (reported)"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "Government services disruption (reported)",
+          "summary": "Government e-services temporarily offline amid cyber incident.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "North Macedonia": {
+    "code": "MKD",
+    "capital": "Skopje",
+    "cyberProfile": {
+      "nationalCERT": "MKD-CIRT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Serbia": {
+    "code": "SRB",
+    "capital": "Belgrade",
+    "cyberProfile": {
+      "nationalCERT": "CERT-RS",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.cert.rs/"
+      ]
+    }
+  },
+  "Montenegro": {
+    "code": "MNE",
+    "capital": "Podgorica",
+    "cyberProfile": {
+      "nationalCERT": "CIRT.ME",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Gov network incident (reported)"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "Gov network incident (reported)",
+          "summary": "Services disrupted; recovery and investigation.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.cirt.me/"
+      ]
+    }
+  },
+  "Bosnia and Herzegovina": {
+    "code": "BIH",
+    "capital": "Sarajevo",
+    "cyberProfile": {
+      "nationalCERT": "CERT.ba",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.cert.ba/"
+      ]
+    }
+  },
+  "Kosovo": {
+    "code": "XKX",
+    "capital": "Pristina",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Moldova": {
+    "code": "MDA",
+    "capital": "Chișinău",
+    "cyberProfile": {
+      "nationalCERT": "CERT-GOV-MD",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.cert.md/"
+      ]
+    }
+  },
+  "Belarus": {
+    "code": "BLR",
+    "capital": "Minsk",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Georgia": {
+    "code": "GEO",
+    "capital": "Tbilisi",
+    "cyberProfile": {
+      "nationalCERT": "CERT-GOV-GE",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Cyber incidents during conflict"
+      ],
+      "incidents": [
+        {
+          "year": 2008,
+          "title": "Cyber incidents during conflict",
+          "summary": "DDoS/defacements reported alongside kinetic operations.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Armenia": {
+    "code": "ARM",
+    "capital": "Yerevan",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Azerbaijan": {
+    "code": "AZE",
+    "capital": "Baku",
+    "cyberProfile": {
+      "nationalCERT": "CERT.GOV.AZ",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://cert.gov.az/"
+      ]
+    }
+  },
+  "Qatar": {
+    "code": "QAT",
+    "capital": "Doha",
+    "cyberProfile": {
+      "nationalCERT": "Q-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.qcert.org/"
+      ]
+    }
+  },
+  "Oman": {
+    "code": "OMN",
+    "capital": "Muscat",
+    "cyberProfile": {
+      "nationalCERT": "OCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.ocert.org/"
+      ]
+    }
+  },
+  "Kuwait": {
+    "code": "KWT",
+    "capital": "Kuwait City",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Bahrain": {
+    "code": "BHR",
+    "capital": "Manama",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Jordan": {
+    "code": "JOR",
+    "capital": "Amman",
+    "cyberProfile": {
+      "nationalCERT": "Jo-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.ncsc.jo/"
+      ]
+    }
+  },
+  "Lebanon": {
+    "code": "LBN",
+    "capital": "Beirut",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Iran": {
+    "code": "IRN",
+    "capital": "Tehran",
+    "cyberProfile": {
+      "nationalCERT": "MAHER-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Stuxnet (reported)"
+      ],
+      "incidents": [
+        {
+          "year": 2010,
+          "title": "Stuxnet (reported)",
+          "summary": "Industrial systems targeted; widely analyzed globally.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Iraq": {
+    "code": "IRQ",
+    "capital": "Baghdad",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Syria": {
+    "code": "SYR",
+    "capital": "Damascus",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Yemen": {
+    "code": "YEM",
+    "capital": "Sana'a",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Hong Kong": {
+    "code": "HKG",
+    "capital": "Hong Kong",
+    "cyberProfile": {
+      "nationalCERT": "HKCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Multiple sector breaches reported"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Multiple sector breaches reported",
+          "summary": "Regular HKCERT alerts and sector incidents.",
+          "severity": "Medium",
+          "link": "https://www.hkcert.org/"
+        }
+      ],
+      "sources": [
+        "https://www.hkcert.org/"
+      ]
+    }
+  },
+  "Taiwan": {
+    "code": "TWN",
+    "capital": "Taipei",
+    "cyberProfile": {
+      "nationalCERT": "TWCERT/CC",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Gov website DDoS waves (reported)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Gov website DDoS waves (reported)",
+          "summary": "Spikes during geopolitical tension periods.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.twcert.org.tw/en/"
+      ]
+    }
+  },
+  "Sri Lanka": {
+    "code": "LKA",
+    "capital": "Sri Jayawardenepura Kotte",
+    "cyberProfile": {
+      "nationalCERT": "Sri Lanka CERT|CC",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://cert.gov.lk/"
+      ]
+    }
+  },
+  "Bangladesh": {
+    "code": "BGD",
+    "capital": "Dhaka",
+    "cyberProfile": {
+      "nationalCERT": "BGD e-GOV CIRT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Bangladesh Bank heist"
+      ],
+      "incidents": [
+        {
+          "year": 2016,
+          "title": "Bangladesh Bank heist",
+          "summary": "SWIFT-related theft of $81M via fraudulent transfers.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Nepal": {
+    "code": "NPL",
+    "capital": "Kathmandu",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Myanmar": {
+    "code": "MMR",
+    "capital": "Naypyidaw",
+    "cyberProfile": {
+      "nationalCERT": "mmCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://mmcert.org/"
+      ]
+    }
+  },
+  "Cambodia": {
+    "code": "KHM",
+    "capital": "Phnom Penh",
+    "cyberProfile": {
+      "nationalCERT": "CamCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Laos": {
+    "code": "LAO",
+    "capital": "Vientiane",
+    "cyberProfile": {
+      "nationalCERT": "LaoCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Brunei": {
+    "code": "BRN",
+    "capital": "Bandar Seri Begawan",
+    "cyberProfile": {
+      "nationalCERT": "BruCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.brucert.org.bn/"
+      ]
+    }
+  },
+  "Mongolia": {
+    "code": "MNG",
+    "capital": "Ulaanbaatar",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Bhutan": {
+    "code": "BTN",
+    "capital": "Thimphu",
+    "cyberProfile": {
+      "nationalCERT": "btCIRT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Maldives": {
+    "code": "MDV",
+    "capital": "Malé",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Kenya": {
+    "code": "KEN",
+    "capital": "Nairobi",
+    "cyberProfile": {
+      "nationalCERT": "KE-CIRT/CC",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Election-period DDoS attempts (reported)"
+      ],
+      "incidents": [
+        {
+          "year": 2017,
+          "title": "Election-period DDoS attempts (reported)",
+          "summary": "Gov/IEBC sites targeted; mitigated.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://www.ke-cirt.go.ke/"
+      ]
+    }
+  },
+  "Uganda": {
+    "code": "UGA",
+    "capital": "Kampala",
+    "cyberProfile": {
+      "nationalCERT": "CERT-UG",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Tanzania": {
+    "code": "TZA",
+    "capital": "Dodoma",
+    "cyberProfile": {
+      "nationalCERT": "TZ-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Rwanda": {
+    "code": "RWA",
+    "capital": "Kigali",
+    "cyberProfile": {
+      "nationalCERT": "RW-CSIRT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Ethiopia": {
+    "code": "ETH",
+    "capital": "Addis Ababa",
+    "cyberProfile": {
+      "nationalCERT": "INSA (national cyber)",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Ghana": {
+    "code": "GHA",
+    "capital": "Accra",
+    "cyberProfile": {
+      "nationalCERT": "CERT-GH",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Nigeria": {
+    "code": "NGA",
+    "capital": "Abuja",
+    "cyberProfile": {
+      "nationalCERT": "ngCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Multiple gov website defacements (reported)"
+      ],
+      "incidents": [
+        {
+          "year": 2020,
+          "title": "Multiple gov website defacements (reported)",
+          "summary": "Short-lived outages/defacements reported in media.",
+          "severity": "Low",
+          "link": ""
+        }
+      ],
+      "sources": [
+        "https://cert.gov.ng/"
+      ]
+    }
+  },
+  "Ivory Coast": {
+    "code": "CIV",
+    "capital": "Yamoussoukro",
+    "cyberProfile": {
+      "nationalCERT": "Côte d’Ivoire CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Senegal": {
+    "code": "SEN",
+    "capital": "Dakar",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Tunisia": {
+    "code": "TUN",
+    "capital": "Tunis",
+    "cyberProfile": {
+      "nationalCERT": "tunCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.cert.tn/"
+      ]
+    }
+  },
+  "Algeria": {
+    "code": "DZA",
+    "capital": "Algiers",
+    "cyberProfile": {
+      "nationalCERT": "CERT-ALGERIA",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Angola": {
+    "code": "AGO",
+    "capital": "Luanda",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Mozambique": {
+    "code": "MOZ",
+    "capital": "Maputo",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Zambia": {
+    "code": "ZMB",
+    "capital": "Lusaka",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Zimbabwe": {
+    "code": "ZWE",
+    "capital": "Harare",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Botswana": {
+    "code": "BWA",
+    "capital": "Gaborone",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Namibia": {
+    "code": "NAM",
+    "capital": "Windhoek",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Eritrea": {
+    "code": "ERI",
+    "capital": "Asmara",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Somalia": {
+    "code": "SOM",
+    "capital": "Mogadishu",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Madagascar": {
+    "code": "MDG",
+    "capital": "Antananarivo",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Mauritius": {
+    "code": "MUS",
+    "capital": "Port Louis",
+    "cyberProfile": {
+      "nationalCERT": "CERT-MU",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.cert-mu.org.mu/"
+      ]
+    }
+  },
+  "Morocco": {
+    "code": "MAR",
+    "capital": "Rabat",
+    "cyberProfile": {
+      "nationalCERT": "maCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.dgssi.gov.ma/"
+      ]
+    }
+  },
+  "Egypt": {
+    "code": "EGY",
+    "capital": "Cairo",
+    "cyberProfile": {
+      "nationalCERT": "EG-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.egcert.eg/"
+      ]
+    }
+  },
+  "Uruguay": {
+    "code": "URY",
+    "capital": "Montevideo",
+    "cyberProfile": {
+      "nationalCERT": "CERTuy (AGESIC)",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": [
+        "https://www.gub.uy/agencia-gobierno-electronico/areas-tematicas/seguridad/certuy"
+      ]
+    }
+  },
+  "Paraguay": {
+    "code": "PRY",
+    "capital": "Asunción",
+    "cyberProfile": {
+      "nationalCERT": "CERT-PY",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Peru": {
+    "code": "PER",
+    "capital": "Lima",
+    "cyberProfile": {
+      "nationalCERT": "CSIRT Nacional (Peru)",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Gov/health sector incidents (reported)"
+      ],
+      "incidents": [
+        {
+          "year": 2021,
+          "title": "Gov/health sector incidents (reported)",
+          "summary": "Phishing and ransomware campaigns noted by authorities.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Bolivia": {
+    "code": "BOL",
+    "capital": "Sucre",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Ecuador": {
+    "code": "ECU",
+    "capital": "Quito",
+    "cyberProfile": {
+      "nationalCERT": "ECU-CERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Colombia": {
+    "code": "COL",
+    "capital": "Bogotá",
+    "cyberProfile": {
+      "nationalCERT": "colCERT",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "IFX Networks incident impact"
+      ],
+      "incidents": [
+        {
+          "year": 2023,
+          "title": "IFX Networks incident impact",
+          "summary": "Service provider issue impacted public entities' sites.",
+          "severity": "Medium",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Venezuela": {
+    "code": "VEN",
+    "capital": "Caracas",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Dominican Republic": {
+    "code": "DOM",
+    "capital": "Santo Domingo",
+    "cyberProfile": {
+      "nationalCERT": "CNCS/CERT-DO",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Panama": {
+    "code": "PAN",
+    "capital": "Panama City",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Costa Rica": {
+    "code": "CRI",
+    "capital": "San José",
+    "cyberProfile": {
+      "nationalCERT": "CSIRT-CR",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [
+        "Conti ransomware against gov agencies"
+      ],
+      "incidents": [
+        {
+          "year": 2022,
+          "title": "Conti ransomware against gov agencies",
+          "summary": "National emergency declared; multiple ministries impacted.",
+          "severity": "High",
+          "link": ""
+        }
+      ],
+      "sources": []
+    }
+  },
+  "Jamaica": {
+    "code": "JAM",
+    "capital": "Kingston",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Guatemala": {
+    "code": "GTM",
+    "capital": "Guatemala City",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Honduras": {
+    "code": "HND",
+    "capital": "Tegucigalpa",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "El Salvador": {
+    "code": "SLV",
+    "capital": "San Salvador",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Nicaragua": {
+    "code": "NIC",
+    "capital": "Managua",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Haiti": {
+    "code": "HTI",
+    "capital": "Port-au-Prince",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Cuba": {
+    "code": "CUB",
+    "capital": "Havana",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Trinidad and Tobago": {
+    "code": "TTO",
+    "capital": "Port of Spain",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Fiji": {
+    "code": "FJI",
+    "capital": "Suva",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Papua New Guinea": {
+    "code": "PNG",
+    "capital": "Port Moresby",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Samoa": {
+    "code": "WSM",
+    "capital": "Apia",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Tonga": {
+    "code": "TON",
+    "capital": "Nukuʻalofa",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Vanuatu": {
+    "code": "VUT",
+    "capital": "Port Vila",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Solomon Islands": {
+    "code": "SLB",
+    "capital": "Honiara",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Kiribati": {
+    "code": "KIR",
+    "capital": "South Tarawa",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Marshall Islands": {
+    "code": "MHL",
+    "capital": "Majuro",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Palau": {
+    "code": "PLW",
+    "capital": "Ngerulmud",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Micronesia": {
+    "code": "FSM",
+    "capital": "Palikir",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Nauru": {
+    "code": "NRU",
+    "capital": "Yaren",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Tuvalu": {
+    "code": "TUV",
+    "capital": "Funafuti",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Libya": {
+    "code": "LBY",
+    "capital": "Tripoli",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "Sudan": {
+    "code": "SDN",
+    "capital": "Khartoum",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  },
+  "South Sudan": {
+    "code": "SSD",
+    "capital": "Juba",
+    "cyberProfile": {
+      "nationalCERT": "",
+      "responsibleDisclosure": "",
+      "infosecCompanies": [],
+      "topVendors": [
+        "Microsoft",
+        "Cisco"
+      ],
+      "securityTips": [
+        "Enable MFA",
+        "Keep systems updated"
+      ],
+      "notableBreaches": [],
+      "incidents": [],
+      "sources": []
+    }
+  }
+}
